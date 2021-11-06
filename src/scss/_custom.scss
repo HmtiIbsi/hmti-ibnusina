@@ -14,20 +14,24 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 10px ;
+  height: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
+  border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: rgb(196, 189, 189); 
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+  background: #938e8e; 
 }
 
 .size-body {
@@ -269,6 +273,22 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 3%;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: 3%;
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+  }
 }
 
 .radius-hard {
@@ -915,10 +935,17 @@ body {
   // end card berita
 }
 
-@media (max-width: 500px) {
+@media (max-width: 575px) {
   .size-body{
-    width: 100%;
+    width: 94%;
     height: 0%;
+  }
+  .img-visimisi {
+    height: 334px;
+}
+  .text-stick {
+    font-size: 1rem;
+    margin-top: -18px;
   }
     // card devisi
 
@@ -1001,10 +1028,12 @@ body {
 
 @media (min-width: 320px) and (max-width: 415px) {
   .size-body{
-    width: 100%;
+    width: 94%;
     height: 0%;
   }
-
+  .img-visimisi {
+    height: 219px;
+}
   // card devisi
   .card-devisi {
     margin-right: 36%;

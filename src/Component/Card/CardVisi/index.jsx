@@ -6,7 +6,7 @@ const CardVisi = () => {
   return (
     <div className='card-visi'>
       <Row>
-        <Col xs="12" sm="12" md="12" className="font-bold font-big text-center">
+        <Col xs="12" sm="12" md="12" className="font-bold font-big text-center" style={{height:"202px"}}>
           <img src={visiMisi} alt="Logo" className="img-visimisi" />
         </Col>
         <Col xs="12" sm="12" md="12" className='body-card-visi' >

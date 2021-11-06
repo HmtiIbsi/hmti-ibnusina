@@ -1,7 +1,6 @@
 import React from 'react';
-import {Col, Row, Card, CardBody } from 'reactstrap';
+import { Card, CardBody } from 'reactstrap';
 import CardHeader from 'reactstrap/lib/CardHeader';
-import event from '../../../assets/img/event.jpg'
 
 const CardEvent = ({
   className,
@@ -20,7 +19,7 @@ const CardEvent = ({
               <div>
                   <div style={{color:"#697281", fontWeight:"500"}}>{dateEvent}</div>
                   <div className="pb-3 text-value">{nameEvent}</div>
-                  <div className="text-justify font-text">{descEvent}</div>
+                  <div className="text-justify font-text overflow-auto" style={{height:'180px'}}>{descEvent}</div>
               </div>
             </CardBody>
           </Card>

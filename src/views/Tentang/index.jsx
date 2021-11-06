@@ -1,11 +1,9 @@
 import React from 'react';
 import { Col, Row, } from 'reactstrap';
-import CardStick from '../../Component/Card/CardStick';
 import CardStruktur from '../../Component/Card/CardStruktur';
 import CardVisi from '../../Component/Card/CardVisi';
 import CardBerita from '../../Component/Card/CardBerita';
 import CardDevisi from '../../Component/Card/CardDevisi';
-import Video from '../../assets/video/OpeningHMTI.mp4';
 import { dataDevisi,  dataStuktur } from '../Dashboard/service'
 import '../Dashboard/index.scss';
 
@@ -67,7 +65,7 @@ const Dashboard = () => {
           UNIVERSITAS IBNU SINA
         </Col>
       </Row>
-      <div className="d-flex  overflow-auto pb-5">
+      <div className="justify-content-md-between justify-content-sm-center d-flex flex-md-wrap pb-5">
         {dataStuktur.map((data, i) => {
           return (
             <CardStruktur

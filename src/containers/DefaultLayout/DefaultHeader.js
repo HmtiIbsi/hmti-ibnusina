@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Nav, NavItem } from 'reactstrap';
 import PropTypes from 'prop-types';
 
-import { AppSidebarToggler } from '@coreui/react';
 import logo from '../../assets/img/hmti.png'
-import sygnet from '../../assets/img/brand/sygnet.svg'
 
 const propTypes = {
   children: PropTypes.node,

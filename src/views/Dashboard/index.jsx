@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+/* eslint-disable jsx-a11y/iframe-has-title */
+import React  from 'react';
 import { Col, Row, } from 'reactstrap';
 import CardStick from '../../Component/Card/CardStick';
 import CardStruktur from '../../Component/Card/CardStruktur';
 import CardVisi from '../../Component/Card/CardVisi';
-import CardBerita from '../../Component/Card/CardBerita';
 import CardDevisi from '../../Component/Card/CardDevisi';
 import CardEvent from '../../Component/Card/CardEvent';
-import Video from '../../assets/video/OpeningHMTI.mp4';
 import { dataDevisi, dataEvent, dataStuktur } from './service'
+import Video from '../../assets/video/OpeningHMTI.mp4';
 import './index.scss';
 
 const Dashboard = () => {
@@ -17,17 +17,10 @@ const Dashboard = () => {
         <source src={Video} />
       </video>
       <Row className="card-stick" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-        <Col xs={1} sm={1} md={1} lg={1} />
-        <Col xs={10} sm={10} md={10} lg={10} > <CardStick /> </Col>
-        <Col xs={1} sm={1} md={1} lg={1} />
+        <Col xs={3} sm={1} md={1} lg={1} xl={1}/>
+        <Col xs={6} sm={10} md={10} lg={10} xl={10} > <CardStick /> </Col>
+        <Col xs={3} sm={1} md={1} lg={1} xl={1}/>
       </Row>
-      {/* Content */}
-      {/* <Row className="pb-5" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
-        <Col xs="12" sm="12" md="12" className="font-bold font-big ">
-          KEGIATAN TERBARU
-        </Col>
-      </Row>
-      <CardBerita /> */}
       <Row className="pb-5" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
         <Col xs="12" sm="12" md="12" className="font-bold font-big header-card-event">
           KEGIATAN TERBARU
@@ -92,7 +85,7 @@ const Dashboard = () => {
           UNIVERSITAS IBNU SINA
         </Col>
       </Row>
-      <div className="justify-content-between justify-content-sm-center d-flex flex-md-wrap pb-5">
+      <div className="justify-content-md-between justify-content-sm-center d-flex flex-md-wrap pb-5">
         {dataStuktur.map((data, i) => {
           return (
             <CardStruktur

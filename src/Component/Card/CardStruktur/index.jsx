@@ -1,6 +1,4 @@
 import React from 'react';
-import { Col, Row, } from 'reactstrap';
-import foto from '../../../assets/img/foto.jpg'
 
 const CardStruktur = ({
   className,
