@@ -1,43 +1,47 @@
-import React from 'react';
-import { Col, Row, } from 'reactstrap';
-import CardStruktur from '../../Component/Card/CardStruktur';
-import CardVisi from '../../Component/Card/CardVisi';
-import CardBerita from '../../Component/Card/CardBerita';
-import CardDevisi from '../../Component/Card/CardDevisi';
-import { dataDevisi,  dataStuktur } from '../Dashboard/service'
-import '../Dashboard/index.scss';
+import React from "react";
+import { Col, Row } from "reactstrap";
+import CardStruktur from "../../Component/Card/CardStruktur";
+import CardVisi from "../../Component/Card/CardVisi";
+import CardBerita from "../../Component/Card/CardBerita";
+import CardDevisi from "../../Component/Card/CardDevisi";
+import { dataDevisi, dataStuktur } from "../Dashboard/service";
+import "../Dashboard/index.scss";
 
 const Dashboard = () => {
   return (
-    <div className="animated fadeIn">
+    <div className="animated fadeIn mt-3">
       {/* Content */}
-      <Row className="pb-5 card-visi-misi" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
+      <Row
+        className="pb-5 card-visi-misi"
+        data-aos="zoom-in"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <Col xs="12" sm="12" md="12" className="font-bold font-big text-center">
-          <div style={{ color: "#FFEF00" }}>
-            TENTANG HMTI
-          </div>
+          <div style={{ color: "#FFEF00" }}>TENTANG HMTI</div>
           UNIVERSITAS IBNU SINA
         </Col>
       </Row>
       <CardBerita />
 
-
-      <Row className="pb-5 card-visi-misi" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
+      <Row
+        className="pb-5 card-visi-misi"
+        data-aos="zoom-in"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <Col xs="12" sm="12" md="12" className="font-bold font-big text-center">
-          <div style={{ color: "#FFEF00" }}>
-            DEVISI HMTI
-          </div>
+          <div style={{ color: "#FFEF00" }}>DEVISI HMTI</div>
           UNIVERSITAS IBNU SINA
         </Col>
       </Row>
       <CardVisi />
 
-
-      <Row className="pb-5 margin-card-devisi" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
+      <Row
+        className="pb-5 margin-card-devisi"
+        data-aos="zoom-in"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <Col xs="12" sm="12" md="12" className="font-bold font-big text-center">
-          <div style={{ color: "#FFEF00" }}>
-            DEVISI HMTI
-          </div>
+          <div style={{ color: "#FFEF00" }}>DEVISI HMTI</div>
           UNIVERSITAS IBNU SINA
         </Col>
       </Row>
@@ -50,22 +54,21 @@ const Dashboard = () => {
               descDevisi={data.desc}
               styleIcon={data.style}
             />
-          )
-        }
-        )
-        }
+          );
+        })}
       </div>
 
-
-      <Row className="pb-5" data-aos="zoom-in" data-aos-anchor-placement="bottom-bottom">
+      <Row
+        className="pb-5"
+        data-aos="zoom-in"
+        data-aos-anchor-placement="bottom-bottom"
+      >
         <Col xs="12" sm="12" md="12" className="font-bold font-big text-center">
-          <div style={{ color: "#FFEF00" }}>
-            STRUKTUR
-          </div>
+          <div style={{ color: "#FFEF00" }}>STRUKTUR</div>
           UNIVERSITAS IBNU SINA
         </Col>
       </Row>
-      <div className="justify-content-md-between justify-content-sm-center d-flex flex-md-wrap pb-5">
+      <div className="cardStruktur justify-content-md-between justify-content-sm-center d-flex flex-md-wrap pb-5">
         {dataStuktur.map((data, i) => {
           return (
             <CardStruktur
@@ -73,10 +76,8 @@ const Dashboard = () => {
               nameStrukturt={data.Name}
               descStruktur={data.Jabatan}
             />
-          )
-        }
-        )
-        }
+          );
+        })}
       </div>
     </div>
   );

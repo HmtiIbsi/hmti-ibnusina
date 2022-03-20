@@ -14,7 +14,7 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px ;
+  width: 10px;
   height: 10px;
 }
 
@@ -25,13 +25,13 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(196, 189, 189); 
+  background: rgb(196, 189, 189);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #938e8e; 
+  background: #938e8e;
 }
 
 .size-body {
@@ -69,6 +69,17 @@ body {
 }
 
 // header
+.navbar {
+  background-color: #ffff;
+  border-bottom: 1px solid transparent;
+  color: #000;
+
+  .logo-hmti {
+    .logo {
+      height: 70px;
+    }
+  }
+}
 .app-header {
   background-color: #ffff;
   border-bottom: 1px solid transparent;
@@ -79,6 +90,7 @@ body {
 
 .nav-header {
   .nav-item {
+    margin: 15px;
     .nav-link {
       color: #000 !important;
     }
@@ -112,6 +124,8 @@ body {
   margin-top: -18px;
 }
 .card-stick {
+  display: flex;
+  justify-content: center;
   margin-top: -69px;
 }
 
@@ -191,6 +205,7 @@ body {
 //and footer
 
 // card devisi
+
 .icon-humas {
   background-color: #1bff002e;
   border-radius: 20%;
@@ -228,20 +243,18 @@ body {
 }
 
 .devisi-card {
-  display: flex;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.card-devisi-body {
-  border-radius: 15px;
-  border: 1px solid #dedede;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  height: 34rem;
+.devisi-card {
+  font-size: 1.3rem;
 }
 
-// card devisi
-
+.font-text {
+  font-size: 100%;
+}
+//end card devisi
 // card struktur
 .img-card-struktur {
   height: 399px;
@@ -275,13 +288,13 @@ body {
   border-radius: 3%;
 }
 
-.iframe-container{
+.iframe-container {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
   border-radius: 3%;
-  iframe{
+  iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -330,6 +343,41 @@ body {
 }
 
 @media (min-width: 1441px) and (max-width: 1920px) {
+  // header
+  .navbar {
+    background-color: #ffff;
+    border-bottom: 1px solid transparent;
+    color: #000;
+
+    .logo-hmti {
+      .logo {
+        padding-top: 10px;
+        height: 70px;
+      }
+    }
+  }
+  .app-header {
+    background-color: #ffff;
+    border-bottom: 1px solid transparent;
+    color: #000;
+    font-size: 195%;
+    font-weight: 700;
+  }
+
+  .nav-header {
+    .nav-item {
+      margin: 15px;
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link:hover {
+        color: #ffef00 !important;
+      }
+    }
+  }
+
+  //and Header
   //footer
   .app-footer {
     background: #185adb;
@@ -382,6 +430,10 @@ body {
   //end app header
 
   //card Stick
+  .card-stick {
+    display: flex;
+    justify-content: center;
+  }
   .card-berita .px-5 {
     margin-left: -50px;
   }
@@ -439,14 +491,23 @@ body {
   // end card-visi
 
   // card devisi
+  .card-devisi {
+    min-width: 28%;
+    max-width: 28%;
+  }
   .card-devisi-body {
-    border-radius: 15px;
-    border: 1px solid #dedede;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    height: 32rem;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 11px #c4c4c4, inset -5px -5px 11px #ffffff;
+    height: 28rem;
+  }
+  .icon-card {
+    margin: auto;
   }
 
   .devisi-card {
+    height: 20%;
+    margin-top: 10px;
     font-size: 1.3rem;
   }
 
@@ -474,17 +535,62 @@ body {
 }
 
 @media (min-width: 1281px) and (max-width: 1440px) {
-    // card devisi
+  // header
+  .navbar {
+    background-color: #ffff;
+    border-bottom: 1px solid transparent;
+    color: #000;
 
-    .card-devisi-body {
-      height: 96%;
+    .logo-hmti {
+      .logo {
+        padding-top: 10px;
+        height: 70px;
+      }
     }
-  
-    .devisi-card {
-      height: 21%;
+  }
+  .app-header {
+    background-color: #ffff;
+    border-bottom: 1px solid transparent;
+    color: #000;
+    font-size: 195%;
+    font-weight: 700;
+  }
+
+  .nav-header {
+    .nav-item {
+      margin: 15px;
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link:hover {
+        color: #ffef00 !important;
+      }
     }
-  
-    // end card devisi
+  }
+
+  //and Header
+  // card devisi
+  .card-devisi {
+    min-width: 30%;
+    max-width: 30%;
+  }
+  .card-devisi-body {
+    border-radius: 15px;
+    border: 1px solid #dedede;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 96%;
+  }
+
+  .devisi-card {
+    margin-top: 10px;
+    height: 20%;
+  }
+  .icon-card {
+    margin: auto;
+  }
+
+  // end card devisi
   //app-header
   .app-header {
     font-size: 157%;
@@ -551,10 +657,18 @@ body {
 
   // card devisi
   .card-devisi-body {
-    border-radius: 15px;
-    border: 1px solid #dedede;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 11px #c4c4c4, inset -5px -5px 11px #ffffff;
     height: 23rem;
+  }
+
+  .devisi-card {
+    font-size: 1.3rem;
+  }
+
+  .font-text {
+    font-size: 100%;
   }
 
   .devisi-card {
@@ -576,17 +690,68 @@ body {
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    // card devisi
+  // header
+  .navbar {
+    background-color: #ffff;
+    border-bottom: 1px solid transparent;
+    color: #000;
 
-    .card-devisi-body {
-      height: 96%;
+    .logo-hmti {
+      .logo {
+        padding-top: 10px;
+        height: 70px;
+      }
     }
-  
-    .devisi-card {
-      height: 21%;
+  }
+  .app-header {
+    background-color: #ffff;
+    border-bottom: 1px solid transparent;
+    color: #000;
+    font-size: 195%;
+    font-weight: 700;
+  }
+
+  .nav-header {
+    .nav-item {
+      margin: 15px;
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link:hover {
+        color: #ffef00 !important;
+      }
     }
-  
-    // end card devisi
+  }
+
+  //and Header
+  // card devisi
+  .card-devisi {
+    min-width: 35%;
+    max-width: 35%;
+  }
+  .card-devisi-body {
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 11px #c4c4c4, inset -5px -5px 11px #ffffff;
+    height: 23rem;
+  }
+
+  .devisi-card {
+    margin-top: 5px;
+    height: 20%;
+    font-size: 1.3rem;
+  }
+
+  .icon-card {
+    margin: auto;
+  }
+
+  .font-text {
+    font-size: 100%;
+  }
+
+  // end card devisi
   //app-header
   .app-header {
     font-size: 129%;
@@ -594,6 +759,10 @@ body {
 
   //end app header
   //card Stick
+  .card-stick {
+    display: flex;
+    justify-content: center;
+  }
   .card-berita .px-5 {
     margin-left: -50px;
   }
@@ -650,59 +819,80 @@ body {
   // end card-visi
 
   // card devisi
-  .card-devisi-body {
-    border-radius: 15px;
-    border: 1px solid #dedede;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    height: 23rem;
-  }
-
-  .devisi-card {
-    font-size: 1.3rem;
-  }
-
-  .font-text {
-    font-size: 100%;
-  }
 
   // end card devisi
 }
 
 @media (max-width: 1024px) {
-    // card devisi
+  //navbar
+  .navbar {
+    border-bottom: 1px solid transparent;
+    color: #000;
 
-    .card-devisi-body {
-      height: 85%;
+    .logo-hmti {
+      margin-left: -300px;
+      .info-logo {
+        font-size: 12px;
+      }
+      .logo {
+        height: 45px;
+      }
     }
-  
-    .icon-card {
-      font-size: 3rem;
-      position: absolute;
-      left: 0;
+  }
+  .nav-header {
+    margin-left: auto;
+    .nav-item {
+      margin-right: -10px;
+
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link:hover {
+        color: #ffef00 !important;
+      }
     }
-  
-  
-    .devisi-card {
-      height: 20%;
-      font-size: 1rem;
-      margin-top: 50%;
-    }
-  
-    .desc-card {
-      height: 40%;
-    }
-  
-    .font-text {
-      font-size: 0.8rem;
-    }
-  
-    .baca-card {
-      position: absolute;
-      top: 90%;
-      left: 3%;
-    }
-  
-    // end card devisi
+  }
+  //end navbar
+  // card devisi
+
+  .card-devisi {
+    min-width: 40%;
+    max-width: 40%;
+  }
+  .card-devisi-body {
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 11px #c4c4c4, inset -5px -5px 11px #ffffff;
+    height: 20rem;
+  }
+
+  .icon-card {
+    margin: auto;
+    font-size: 3rem;
+  }
+
+  .devisi-card {
+    margin-top: 10px;
+    height: 10%;
+    font-size: 1rem;
+  }
+
+  .desc-card {
+    margin-top: 20px;
+  }
+
+  .font-text {
+    font-size: 0.8rem;
+  }
+
+  .baca-card {
+    position: absolute;
+    top: 90%;
+    left: 3%;
+  }
+
+  // end card devisi
 
   //app-header
   .app-header {
@@ -768,24 +958,6 @@ body {
 
   // end card-visi
 
-  // card devisi
-  .card-devisi-body {
-    border-radius: 15px;
-    border: 1px solid #dedede;
-    box-shadow: 10px 8px 10px #aaaaaa;
-    height: 26rem;
-  }
-
-  .devisi-card {
-    font-size: 1.3rem;
-  }
-
-  .font-text {
-    font-size: 100%;
-  }
-
-  // end card devisi
-
   // card event
   .card-event {
     min-width: 45%;
@@ -796,45 +968,38 @@ body {
 }
 
 @media (max-width: 800px) {
-  
-  // card devisi
-  .card-devisi {
-    margin-right: 10%;
-  }
+  //navbar
+  .navbar {
+    border-bottom: 1px solid transparent;
+    color: #000;
 
-  .card-devisi-body {
-    height: 79%;
-    width: 140%;
+    .logo-hmti {
+      padding-top: 5px;
+      margin-left: -300px;
+      .info-logo {
+        font-size: 12px;
+      }
+      .logo {
+        height: 45px;
+      }
+    }
   }
+  .nav-header {
+    margin-left: auto;
+    .nav-item {
+      margin-right: -10px;
 
-  .icon-card {
-    font-size: 2.3rem;
-    position: absolute;
-    left: 3%;
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link:hover {
+        color: #ffef00 !important;
+      }
+    }
   }
+  //end navbar
 
-  .devisi-card {
-    height: 20%;
-    font-size: 1rem;
-    margin-top: 30%;
-  }
-
-  .desc-card {
-    margin-top: 1%;
-    height: 35%;
-  }
-
-  .font-text {
-    font-size: 1rem;
-  }
-
-  .baca-card {
-    position: absolute;
-    top: 90%;
-    left: 3%;
-  }
-
-  // end card devisi
   //   card berita
   .h-100 img {
     height: 8rem;
@@ -860,8 +1025,41 @@ body {
   // end card visi
 
   // card devisi
-  .margin-card-devisi {
-    margin-top: 5%;
+
+  .card-devisi {
+    min-width: 40%;
+    max-width: 40%;
+  }
+  .card-devisi-body {
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 11px #c4c4c4, inset -5px -5px 11px #ffffff;
+    height: 20rem;
+  }
+
+  .icon-card {
+    margin: auto;
+    font-size: 3rem;
+  }
+
+  .devisi-card {
+    margin-top: 10px;
+    height: 10%;
+    font-size: 1rem;
+  }
+
+  .desc-card {
+    margin-top: 20px;
+  }
+
+  .font-text {
+    font-size: 0.8rem;
+  }
+
+  .baca-card {
+    position: absolute;
+    top: 90%;
+    left: 3%;
   }
 
   // end card devisi
@@ -882,46 +1080,89 @@ body {
 }
 
 @media (max-width: 768px) {
+  //navbar
+  .navbar {
+    border-bottom: 1px solid transparent;
+    color: #000;
 
-    // card devisi
-    .card-devisi {
-      margin-right: 12%;
+    .logo-hmti {
+      margin-left: -260px;
+      .info-logo {
+        font-size: 12px;
+        visibility: hidden;
+      }
+      .logo {
+        height: 45px;
+      }
     }
-  
-    .card-devisi-body {
-      height: 80%;
-      width: 160%;
+  }
+  .nav-header {
+    margin-left: auto;
+    .nav-item {
+      margin-right: -10px;
+      font-size: 20px;
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link:hover {
+        color: #ffef00 !important;
+      }
     }
-  
-    .icon-card {
-      font-size: 2.5rem;
-      position: absolute;
-      left: 3%;
-    }
-  
-  
-    .devisi-card {
-      height: 20%;
-      font-size: 1rem;
-      margin-top: 35%;
-    }
-  
-    .desc-card {
-      margin-top: 2%;
-      height: 35%;
-    }
-  
-    .font-text {
-      font-size: 1rem;
-    }
-  
-    .baca-card {
-      position: absolute;
-      top: 90%;
-      left: 3%;
-    }
-  
-    // end card devisi
+  }
+  //end navbar
+  .ri-file-list-3-line {
+    font-size: 30px;
+  }
+  .ri-user-2-line {
+    font-size: 30px;
+  }
+  .ri-folder-chart-line {
+    font-size: 30px;
+  }
+  .info {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  // card devisi
+
+  .card-devisi {
+    min-width: 60%;
+    max-width: 60%;
+  }
+  .card-devisi-body {
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 11px #c4c4c4, inset -5px -5px 11px #ffffff;
+    height: 20rem;
+  }
+
+  .icon-card {
+    margin: auto;
+    font-size: 3rem;
+  }
+
+  .devisi-card {
+    margin-top: 10px;
+    height: 10%;
+    font-size: 1rem;
+  }
+
+  .desc-card {
+    margin-top: 20px;
+  }
+
+  .font-text {
+    font-size: 0.8rem;
+  }
+
+  .baca-card {
+    position: absolute;
+    top: 90%;
+    left: 3%;
+  }
+
+  // end card devisi
 
   // card berita
   .h-100 img {
@@ -933,132 +1174,87 @@ body {
   }
 
   // end card berita
+  //CardStruktur
+  //end cardStruktur
+  .cardStruktur {
+    position: relative;
+    overflow: auto;
+  }
 }
 
 @media (max-width: 575px) {
-  .size-body{
+  //navbar
+  .navbar {
+    border-bottom: 1px solid transparent;
+    color: #000;
+
+    .logo-hmti {
+      margin-left: -215px;
+      .info-logo {
+        font-size: 12px;
+        visibility: hidden;
+      }
+      .logo {
+        height: 45px;
+      }
+    }
+  }
+  .nav-header {
+    margin-left: auto;
+    .nav-item {
+      margin-right: -10px;
+      font-size: 13px;
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link:hover {
+        color: #ffef00 !important;
+      }
+    }
+  }
+  //end navbar
+  .size-body {
     width: 94%;
     height: 0%;
   }
   .img-visimisi {
     height: 334px;
-}
+  }
   .text-stick {
     font-size: 1rem;
     margin-top: -18px;
   }
-    // card devisi
-
-    .card-devisi {
-      margin-right: 31%;
-    }
-    .card-devisi-body {
-      height: 99%;
-      width: 250%;
-    }
-    .icon-card {
-      font-size: 2.7rem;
-      position: absolute;
-      left: 3%;
-    }
-    .devisi-card {
-      height: 20%;
-      font-size: 1rem;
-      margin-top: 31%;
-    }
-    .desc-card {
-      margin-top: 4%;
-      height: 100%;
-    }
-    .font-text {
-      font-size: 0.9rem;
-    }
-    .baca-card {
-      position: absolute;
-      top: 90%;
-      left: 3%;
-    }
-  
-    // end card devisi
-
-      // card event 
-    .header-card-event{
-      margin-bottom: -10%;
-    }
-    .card-event {
-      margin-right: 48%;
-    }
-
-    .card-event .card{
-      width: 230% !important;
-    }
-    // end card event
-
-      // footer
-      .footer img{
-        width: 30% !important;
-      }
-
-      .footer-him{
-        font-size: 1rem;
-        margin-bottom:5%;
-      }
-
-      .nav-footer{
-        font-size: 0.9rem;
-      }
-
-      .footer i{
-        font-size: 0.9rem !important;
-        // margin-bottom: 1%;
-        // margin-top: 5%;
-      }
-
-      .text-footer{
-        font-size: 0.9rem !important;
-      }
-
-      .nav-item-footer{
-        margin-top: 2%;
-        font-size: 1rem;
-      }
-
-      // end footer
-}
-
-@media (min-width: 320px) and (max-width: 415px) {
-  .size-body{
-    width: 94%;
-    height: 0%;
-  }
-  .img-visimisi {
-    height: 219px;
-}
   // card devisi
-  .card-devisi {
-    margin-right: 36%;
-  }
 
+  .card-devisi {
+    min-width: 58%;
+    max-width: 58%;
+  }
   .card-devisi-body {
-    height: 94%;
-    width: 284%;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 11px #c4c4c4, inset -5px -5px 11px #ffffff;
+    height: 20rem;
   }
 
   .icon-card {
-    font-size: 2.7rem;
-    position: absolute;
-    left: 3%;
+    margin: auto;
+    font-size: 3rem;
   }
 
   .devisi-card {
-    height: 20%;
+    margin-top: 10px;
+    height: 10%;
     font-size: 1rem;
-    margin-top: 40%;
   }
 
   .desc-card {
-    margin-top: 5%;
-    height: 35%;
+    margin-top: 20px;
+  }
+
+  .font-text {
+    font-size: 0.8rem;
   }
 
   .baca-card {
@@ -1069,49 +1265,190 @@ body {
 
   // end card devisi
 
-
-  // card event 
-  .header-card-event{
+  // card event
+  .header-card-event {
     margin-bottom: -10%;
   }
   .card-event {
     margin-right: 48%;
   }
 
-  .card-event .card{
+  .card-event .card {
     width: 230% !important;
   }
   // end card event
 
   // footer
-  .footer img{
+  .footer img {
     width: 30% !important;
   }
 
-  .footer-him{
+  .footer-him {
     font-size: 1rem;
-    margin-bottom:5%;
+    margin-bottom: 5%;
   }
 
-  .nav-footer{
+  .nav-footer {
     font-size: 0.9rem;
   }
 
-  .footer i{
+  .footer i {
     font-size: 0.9rem !important;
     // margin-bottom: 1%;
-     // margin-top: 5%;
+    // margin-top: 5%;
   }
 
-  .text-footer{
+  .text-footer {
     font-size: 0.9rem !important;
   }
 
-  .nav-item-footer{
+  .nav-item-footer {
     margin-top: 2%;
     font-size: 1rem;
   }
 
   // end footer
+}
 
+@media (min-width: 320px) and (max-width: 415px) {
+  //navbar
+  .navbar {
+    border-bottom: 1px solid transparent;
+    color: #000;
+
+    .logo-hmti {
+      margin-left: -200px;
+      .info-logo {
+        font-size: 12px;
+        visibility: hidden;
+      }
+      .logo {
+        height: 45px;
+      }
+    }
+  }
+  .nav-header {
+    margin-left: auto;
+    .nav-item {
+      margin-right: -10px;
+      font-size: 13px;
+      .nav-link {
+        color: #000 !important;
+      }
+
+      .nav-link:hover {
+        color: #ffef00 !important;
+      }
+    }
+  }
+  //end navbar
+  //cardStick
+  .ri-file-list-3-line {
+    font-size: 30px;
+  }
+  .ri-user-2-line {
+    font-size: 30px;
+  }
+  .ri-folder-chart-line {
+    font-size: 30px;
+  }
+  .info {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .size-body {
+    width: 94%;
+    height: 0%;
+  }
+  .img-visimisi {
+    height: 219px;
+  }
+  //end card stick
+  // card devisi
+  .flow-devisi {
+    overflow-y: hidden !important;
+  }
+  // card devisi
+
+  .card-devisi {
+    min-width: 70%;
+    max-width: 70%;
+  }
+  .card-devisi-body {
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 11px #c4c4c4, inset -5px -5px 11px #ffffff;
+    height: 20rem;
+  }
+
+  .icon-card {
+    margin: auto;
+    font-size: 3rem;
+  }
+
+  .devisi-card {
+    margin-top: 15px;
+    height: 13%;
+    font-size: 1rem;
+  }
+
+  .desc-card {
+    margin-top: 20px;
+  }
+
+  .font-text {
+    font-size: 0.8rem;
+  }
+
+  .baca-card {
+    position: absolute;
+    top: 90%;
+    left: 3%;
+  }
+
+  // end card devisi
+
+  // card event
+  .header-card-event {
+    margin-bottom: -10%;
+  }
+  .card-event {
+    margin-right: 48%;
+  }
+
+  .card-event .card {
+    width: 230% !important;
+  }
+  // end card event
+
+  // footer
+  .footer img {
+    width: 30% !important;
+  }
+
+  .footer-him {
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+
+  .nav-footer {
+    font-size: 0.9rem;
+  }
+
+  .footer i {
+    font-size: 0.9rem !important;
+    // margin-bottom: 1%;
+    // margin-top: 5%;
+  }
+
+  .text-footer {
+    font-size: 0.9rem !important;
+  }
+
+  .nav-item-footer {
+    margin-top: 2%;
+    font-size: 1rem;
+  }
+
+  // end footer
 }
